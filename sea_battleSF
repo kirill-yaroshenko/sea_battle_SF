@@ -1,19 +1,19 @@
 import os
 from random import randint
 
-SIZE_BOARD = 6
+SIZE_BOARD: int = 6
 #type (size) and number of ships on the board
-NUMBER_OF_SHIPS = [3, 2, 2, 1, 1, 1, 1]
+NUMBER_OF_SHIPS: list = [3, 2, 2, 1, 1, 1, 1]
 
 class Color:
-    red = '\033[1;31m'
-    green = '\033[1;32m'
-    brown = '\033[2;33m'
-    yellow = '\033[1;93m'
-    blue = '\033[1;34m'
-    fiolet = '\033[1;35m'
-    biruz = '\033[0;36m'
-    reset = '\033[0m'
+    red: str = '\033[1;31m'
+    green: str = '\033[1;32m'
+    brown: str = '\033[2;33m'
+    yellow: str = '\033[1;93m'
+    blue: str = '\033[1;34m'
+    fiolet: str = '\033[1;35m'
+    biruz: str = '\033[0;36m'
+    reset: str = '\033[0m'
     
 def set_color(text: str, color: str) -> str:
     return color + text + Color.reset
