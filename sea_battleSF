@@ -19,15 +19,15 @@ def set_color(text: str, color: str) -> str:
     return color + text + Color.reset
 
 # Constants used to represent elements on the board
-CELL = set_color('~', Color.blue)
-SHIP = set_color('#', Color.yellow)
-ATTACK = set_color('X', Color.red)
-MISS = set_color('Miss!', Color.fiolet)
-SHIP_DESTROYED = set_color('Ship destroyed!', Color.red)
-SHIP_ATTACK = set_color('Ship attack!', Color.brown)
-DOT = set_color('o', Color.biruz)
-USER_WIN = set_color('You win!', Color.green)
-USER_LOSE = set_color('You lose!', Color.red)
+CELL: str = set_color('~', Color.blue)
+SHIP: str = set_color('#', Color.yellow)
+ATTACK: str = set_color('X', Color.red)
+MISS: str = set_color('Miss!', Color.fiolet)
+SHIP_DESTROYED: str = set_color('Ship destroyed!', Color.red)
+SHIP_ATTACK: str = set_color('Ship attack!', Color.brown)
+DOT: str = set_color('o', Color.biruz)
+USER_WIN: str = set_color('You win!', Color.green)
+USER_LOSE: str = set_color('You lose!', Color.red)
 
 class Dot:
 
